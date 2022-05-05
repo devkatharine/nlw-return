@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -8,9 +9,7 @@
 --headline: hsl(210, 11%, 15%, 1);
 --paragraph: hsl(210, 9%, 31%, 1);
 
-
-
-  font-size: 62,5%;
+ font-size: 62,5%;
 }
 
 body {
@@ -19,9 +18,18 @@ body {
   text-align: center;
 }
 
+header {
+  width: 37.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 4.1rem;
+
+}
+
 h4 {
   font-size: 1.4rem;
   color: var(--primary-color);
+  margin-bottom: 1.6rem;
 
 }
 
@@ -29,6 +37,8 @@ h1 {
   font-size: 3.4rem;
   line-height: 130%;
   color: var(--headline);
+
+  margin-bottom: 2.4rem;
 }
 
 p {
@@ -36,8 +46,15 @@ p {
   line-height: 150%;
   font-weight: 400;
   color: var(--paragraph);
+
+  margin-bottom: 3.2rem;
 }
 
 button {
   background: var(--primary-color);
+
+  border: none;
+  border-radius: 0.8rem;
+
+  margin-bottom: 6rem;
 }
