@@ -1,3 +1,4 @@
+/*==== GERAL =====================================*/
 * {
   margin: 0;
   box-sizing: border-box;
@@ -21,6 +22,24 @@ body {
   font-size: 1.6rem;
 
   text-align: center;
+}
+
+/*==== HEADER =====================================*/
+
+
+header::before {
+  content: "";
+  width: 100vw;
+  height: 108rem;
+  background-color: var(--brand-light);
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
+  
 }
 
 header {
@@ -80,6 +99,14 @@ header button {
   margin-left: auto;
 }
 
+header img {
+  width: 26.4rem;
+  display: block;
+  margin-inline: auto;
+  object-position: 0 2rem;
+}
+
+
 header .stats {
   width: 32.7rem;
   padding-block: 4rem;
@@ -112,24 +139,4 @@ header .stat p {
   line-height: 150%;
 }
 
-header img {
-  width: 26.4rem;
-  display: block;
-  margin-inline: auto;
-  object-position: 0 2rem;
-}
 
-header::before {
-  content: "";
-  width: 100vw;
-  height: 108rem;
-  background-color: var(--brand-light);
-  display: block;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  
-  
-}
