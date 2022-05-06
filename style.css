@@ -31,14 +31,14 @@ header {
 
 }
 
-h4 {
+header h4 {
   font-size: 1.4rem;
   color: var(--primary-color);
   margin-bottom: 1.6rem;
 
 }
 
-h1 {
+header h1 {
   font-size: 3.4rem;
   line-height: 130%;
   color: var(--headline);
@@ -46,7 +46,7 @@ h1 {
   margin-bottom: 2.4rem;
 }
 
-p {
+header p {
   font-size: 1.8rem;
   line-height: 150%;
   font-weight: 400;
@@ -55,7 +55,7 @@ p {
   margin-bottom: 3.2rem;
 }
 
-button {
+header button {
   background: var(--primary-color);
 
   border: none;
@@ -80,7 +80,7 @@ button {
   margin-left: auto;
 }
 
-.stats {
+header .stats {
   width: 32.7rem;
   padding-block: 4rem;
   margin-inline: auto;
@@ -97,7 +97,7 @@ button {
   
 }
 
-.stat h3 {
+header .stat h3 {
   font-size: 4.8rem;
   color: var(--headline);
   line-height: 130%;
@@ -105,7 +105,7 @@ button {
   margin-bottom: 0.4rem;
 }
 
-.stat p {
+header .stat p {
   margin: 0;
   color: var(--primary-color);
   font-size: 1.6rem;
