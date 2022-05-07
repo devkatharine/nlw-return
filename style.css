@@ -24,6 +24,12 @@ body {
   text-align: center;
 }
 
+.wrapper {
+  width: 37.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /*==== HEADER =====================================*/
 
 
@@ -43,9 +49,7 @@ header::before {
 }
 
 header {
-  width: 37.5rem;
-  margin-right: auto;
-  margin-left: auto;
+  
   margin-top: 4.1rem;
 
 }
@@ -139,4 +143,11 @@ header .stat p {
   line-height: 150%;
 }
 
+/*==== NAVIGATION =====================================*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
