@@ -1,8 +1,8 @@
 /*==== GERAL =====================================*/
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-size: 62,5%;
 }
 
 :root {
@@ -13,6 +13,8 @@
 
 --brand-beige: hsl(39, 100%, 97%);
 --brand-light: hsl(148, 23%, 89%);
+
+font-size: 62.5%; /* 1rem = 10px */
 
 --nav-height: 7.2rem;
 
@@ -35,12 +37,21 @@ body {
 
 .wrapper {
   width: 37.5rem;
-  margin-right: auto;
-  margin-left: auto;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+ul {
+  list-style: none;
 }
 
 /*==== HEADER =====================================*/
 
+header {
+  
+  margin-top: calc(4.1rem + var(--nav-height));
+
+}
 
 header::before {
   content: "";
@@ -57,11 +68,7 @@ header::before {
   
 }
 
-header {
-  
-  margin-top: calc(4.1rem + var(--nav-height));
 
-}
 
 header h4 {
   font-size: 1.4rem;
@@ -72,8 +79,8 @@ header h4 {
 
 header h1 {
   font-size: 3.4rem;
-  line-height: 130%;
   color: var(--headline);
+  line-height: 130%;
 
   margin-bottom: 2.4rem;
 }
@@ -91,7 +98,7 @@ header button {
   background: var(--primary-color);
 
   border: none;
-  border-radius: 0.8rem;
+  border-radius: 4rem;
 
   margin-bottom: 6rem;
 
@@ -156,9 +163,6 @@ header .stat p {
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.6rem 2.4rem;
 
   height: var(--nav-height);
 
@@ -168,6 +172,15 @@ nav {
   transform: translateX(-50%);
 }
 
+nav.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 nav.scroll {
   background: var(--primary-color);
+  width: 100vw;
+  position: fixed;
+  top: 0;
 }
