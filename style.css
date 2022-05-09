@@ -28,6 +28,9 @@ body {
   font-size: 1.6rem;
 
   text-align: center;
+
+  overflow: overlay;
+  
 }
 
 .wrapper {
@@ -42,7 +45,7 @@ body {
 header::before {
   content: "";
   width: 100vw;
-  height: 108rem;
+  height: calc(108rem + var(--nav-height));
   background-color: var(--brand-light);
   display: block;
 
@@ -165,3 +168,6 @@ nav {
   transform: translateX(-50%);
 }
 
+nav.scroll {
+  background: var(--primary-color);
+}
